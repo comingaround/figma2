@@ -1,25 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
-/* NAVBAR */
-
-body {
-    margin: 0;
-}
-body ul,
-body h1{ 
-    margin: 0;
-}
-.header.container-fluid {
-    padding: 20px 0;
-}
-.header .nav ul li a {
-    color: black;
-    text-decoration: none;
-}
-.header .nav ul li a:hover {
-    color: blue;
-}
+/* RESPONSIVE NAVBAR */
 
 /* BUTTONS */
 
@@ -80,11 +62,6 @@ body h1{
     top: -100px;
     height: 355px;
 }
-/* @media (max-width: 768px) {
-    .service .container .box {
-        display: none;
-    }
-}  */
 
 /* SHOUTER */
 
@@ -99,7 +76,6 @@ body h1{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: 300px; */
 }
 
 /* COMPANY VALUE */
@@ -129,61 +105,22 @@ body h1{
     height: 400px;
     background-color: gray;
 }
-@media (max-width: 768px) {
-    .company .container .gray-box {
-        display: none;
-    }
-} 
-@media (max-width: 768px) {
-    .company .container .green-box {
-        display: none;
-    }
-}
-@media (max-width: 768px) {
-    .company .container .row {
-        justify-content: center;   
-    }
-}  
-
 
   /* OUR SERVICES */
-
-  .ourservices {
-    margin: 20px;
-    padding: 20px;
-  }
-  .ourservices .col {
+    
+  .our-services .our-services-top {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .ourservices .col h3 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
   }
-  .ourservices2 {
-    margin: 20px;
-    padding: 20px;
-  }
-  .ourservices2 .col {
+  .our-services .our-services-top h5 {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .ourservices2 .col h3 {
+    justify-content: center;
     padding: 10px;
+    margin-top: 10px;
   }
-  @media (max-width: 768px) {
-    .container.ourservices .col-md-4.col-sm-12 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-} 
-@media (max-width: 768px) {
-    .container.ourservices2 .col-md-4.col-sm-12 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-} 
 
   /* HERO-TWO */
 
@@ -216,12 +153,6 @@ body h1{
   .logoipsum {
     margin-top: 250px;
   }
-  @media (max-width: 768px) {
-    .logoipsum.container .col-md-3.col-sm-12.col-xs-12 {
-        display: flex;
-        justify-content: center;
-    }
-}
 
   /* NEWS */
 
@@ -230,10 +161,10 @@ body h1{
      padding: 24px;
      background-color: rgb(125, 119, 119);
      height: 250px;
-     margin: 20px 20px;
+     margin: 20px 0px;
 }
 .news h3, .news p, .news a {
-    margin: 20px 20px;  
+    margin: 20px 0px;  
 }
 
 /* HERO-THREE */
@@ -256,45 +187,172 @@ body h1{
 
 /* FOOTER */
 
-.footer {
-    margin-top: 0 !important;
-    background-color: gray;
+.footer.container-fluid {
+    background-color: rgb(25, 25, 25);
     color: white;
-    padding: 100px 0;
+    padding: 50px 0;
+}
+.footer .footer-logo p,
+.footer .footer-list ul,
+.footer .footer-info .footer-info-p {
+    padding-top: 30px;
 }
 .footer .footer-list ul li {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 5px 0;
+    justify-content: start;
+    padding: 5px;
 }
-/* .footer h3 {
+.footer .footer-icons {
+    padding: 50px 0 20px 0;
+}
+.footer .footer-icons i {
     display: flex;
     justify-content: center;
-} */
-.footer .footer-logo {
-    /* display: flex; */
-    justify-content: center;
-    flex-direction: column;
 }
-.footer .footer-logo-text {
+
+/* BOTTOMS */
+
+.bottoms {
+    color: white;
+    background-color: black;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    align-items: center;
+    height: 10vh;
 }
-.footer .footer-logo .footer-logo-icons i {
-    margin: 10px;
+.bottoms h3 {
+    font-size: 10px;
 }
-.footer .footer-info {
+
+/* ABOUT */
+/* HEADER */
+
+.about_header {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    height: calc(30vh - 56px);
 }
-.footer .footer-info p {
-    padding: 5px 0;
+.black-line {
+    border: 3px solid black;
+    width: 80px;
+    height: 3px;
+    margin: auto;
+
 }
-.footer .footer-logo img {
-    padding-left: 70px;
+
+/* OUR TEAM */
+
+.our-team h6,
+.our-team p,
+.our-team .members .green-line {
+    padding: 10px 10px 10px 0;
+}
+.our-team h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.our-team .members .members-box {
+    width: 100%;
+    border: 1px solid black ;
+    height: 35vh;
+    background-color: gray;
+}
+.members .green-line {
+    padding: 0 !important;
+    border: 2px solid green;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+/* VALUES */
+
+.values-fluid {
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+.values .multi-line {
+    width: 100%;
+    display: flex;
+}
+.values .multi-line .multi-green {
+    border: 5px solid green;
+    width: 75%;
+    margin: 10px 0;
+}
+.values .multi-line .multi-gray {
+    border: 5px solid gray;
+    width: 25%;
+    margin: 10px 0;
+}
+.values .values-box h3 {
+    padding: 20px;
+}
+
+/* OUR COMPANY */
+
+.our-company {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.our-company .our-company-floater {
+    position: absolute;
+    padding: 10px 10px 0 10px;
+    background-color: green;
+    top: 250px;
+    left: 30%;
+}
+.our-company .our-company-box {
+    background-color: gray;
+    height: 50vh;
+}
+.our-company .our-company-text {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* COMPANY RESPONSIVE */
+
+@media (max-width: 768px) {
+    .company .container .gray-box {
+        display: none;
+    }
+} 
+@media (max-width: 768px) {
+    .company .container .green-box {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .company .container .row {
+        justify-content: center;   
+    }
+}  
+@media (max-width: 768px) {
+    .container.ourservices .col-md-4.col-sm-12 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+} 
+@media (max-width: 768px) {
+    .container.ourservices2 .col-md-4.col-sm-12 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .logoipsum.container .col-md-3.col-sm-12.col-xs-12 {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (max-width: 768px) {
     .footer .footer-list {
@@ -308,15 +366,28 @@ body h1{
         flex-direction: column;
     }
 }
-
-/* BOTTOMS */
-
-.bottoms {
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+@media(min-width: 768px) {
+    .collapse.navbar-collapse {
+        justify-content: flex-end;
+    }
 }
-
+@media (max-width: 992px) {
+    .our-company .our-company-floater {
+        display: none;   
+    }
+}
+@media (max-width: 992px) {
+    .our-company .our-company-text {
+        padding: 10px;   
+    }
+}
+@media (max-width: 992px) {
+    .service {
+        display: none;   
+    }
+}
+@media (max-width: 992px) {
+    .shouter {
+        margin-top: 50px;   
+    }
+}
